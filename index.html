@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НИУ Мэмологии им. Меллстроя </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f0f13;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff0055, #7a00ff);
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 20px rgba(255, 0, 85, 0.4);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .badge {
+            background-color: #222;
+            border: 2px dashed #ff0055;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #ff477e;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #00f0ff;
+            border-bottom: 2px solid #00f0ff;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
+
+        .seasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .season-card {
+            background-color: #1a1a24;
+            border: 1px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .season-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff0055;
+        }
+
+        .season-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+        }
+
+        .season-info {
+            padding: 15px 20px;
+        }
+
+        .season-number {
+            display: inline-block;
+            background: #ff0055;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .season-title {
+            color: #fff;
+            font-size: 1.3rem;
+        }
+
+        .contacts {
+            background-color: #16161e;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #7a00ff;
+        }
+
+        .contacts p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contacts ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .contacts li {
+            padding: 5px 0;
+            color: #aaa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+            margin-top: 40px;
+        }
+
+        .btn-donate {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #00f0ff, #7a00ff);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: opacity 0.2s;
+        }
+
+        .btn-donate:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>НИИ Мэмологии им. Меллстроя</h1>
+        <p>Официальный институт исследования лора, хроник и эпических эпох</p>
+    </header>
+
+    <div class="container">
+
+        <div class="badge">
+            Данная страница содержит полную хронику великого сериала.
+        </div>
+
+        <section>
+            <h2>Хроника Сериала</h2>
+            <div class="seasons-grid">
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1qZhCQ-8558D3Qm_F4jkUaEQYPdCbW5ncsB3qFgAxg&s=10" alt="1 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">1 Сезон</span>
+                        <h3 class="season-title">Темщики</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJRfvI0mXnuciGRHcj-_prTYEOTObc38x95IDXhPgXUKNMmNF_nsmnQ&s=10" alt="2 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">2 Сезон</span>
+                        <h3 class="season-title">Мурино</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vpbEc2tbAp5GIHmW0AEayad32kDIzyQl_mb8T9loiA&s=10" alt="3 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">3 Сезон</span>
+                        <h3 class="season-title">Село Молочное</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDX4QOSt1XC83PEdekxYWOXhr3ajYR-Uj-7i-riTN22A&s=10" alt="4 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">4 Сезон</span>
+                        <h3 class="season-title">Мытищи</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEK-uOG1BjDUQ0jOpVe9ihjIAT-2Kn9Fd_EfrwEVK9A&s=10" alt="5 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">5 Сезон</span>
+                        <h3 class="season-title">Деревня vs Город</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKk6fIuOt4_aTQDTJePQFYnAq0cZcCep9iF1Y7IZssWQ&s=10" alt="6 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">6 Сезон</span>
+                        <h3 class="season-title">Котость</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWaI0CcxpnQ4kfRycA08-1RYttsyo5tR55LzTYlHeozA&s=10" alt="7 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">7 Сезон</span>
+                        <h3 class="season-title">Смены</h3>
+                    </div>
+                </div>
+
+                <div class="season-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmMxM9lxXV6LjOSYEdNNXF-wsuXs3Z9LK4AWqj-C2GA&s=10" alt="8 сезон" class="season-img">
+                    <div class="season-info">
+                        <span class="season-number">8 Сезон</span>
+                        <h3 class="season-title">Маньяки</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Контактная Информация</h2>
+            <div class="contacts">
+                <p><strong>Главный корпус:</strong> г. Москва, ул. Стримерская, д. 777, каб. 1337</p>
+                <p><strong>Телефон горячей линии:</strong> 8 (800) 555-35-35</p>
+                <p><strong>Электронная почта:</strong> dean@mellstroy-science.ru</p>
+
+                <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
+
+                <p><strong>Часы приёма апелляций:</strong></p>
+                <ul>
+                    <li>• Пн–Пт: С 03:00 ночи до 10:00 утра (во время стримов)</li>
+                    <li>• Сб–Вс: Перерыв на просмотр всех сезонов</li>
+                </ul>
+
+                <a href="#" class="btn-donate" onclick="alert('Запрос на грант отправлен!'); return false;">Подать заявку на грант</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 НИИ Мэмологии. Все права защищены. Ни один ч в процессе разработки сайта не пострадал.</p>
+    </footer>
+
+</body>
+</html>
